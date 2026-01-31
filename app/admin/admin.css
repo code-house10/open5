@@ -1,0 +1,25 @@
+/* Admin Panel Styles */
+* {
+    font-family: 'Cairo', sans-serif !important;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f5f6fa;
+    direction: rtl;
+}
+
+.admin-content {
+    margin-right: 260px;
+    min-height: 100vh;
+    padding: 30px;
+    transition: margin-right 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .admin-content {
+        margin-right: 70px;
+    }
+}

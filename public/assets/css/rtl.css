@@ -1,0 +1,183 @@
+/* Arabic RTL Styles for نقل العفش Landing Page */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap');
+
+/* Apply Cairo font globally */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+li,
+button,
+input,
+textarea,
+select {
+    font-family: 'Cairo', sans-serif !important;
+}
+
+/* RTL Direction */
+html[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Navbar adjustments */
+html[dir="rtl"] .navbar-nav {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .navbar-brand {
+    right: 0;
+    left: auto;
+}
+
+html[dir="rtl"] .sub-menu {
+    right: 0;
+    left: auto;
+    text-align: right;
+}
+
+/* Banner adjustments */
+html[dir="rtl"] .banner-image {
+    left: 0;
+    right: auto;
+}
+
+html[dir="rtl"] .arrow-shape {
+    left: 0;
+    right: auto;
+    transform: scaleX(-1);
+}
+
+/* Service slider */
+html[dir="rtl"] .service-nav .next {
+    left: -60px;
+    right: auto;
+}
+
+html[dir="rtl"] .service-nav .prev {
+    right: -60px;
+    left: auto;
+}
+
+/* Icon flipping for RTL */
+html[dir="rtl"] .fa-chevron-right:before {
+    content: "\f053";
+}
+
+html[dir="rtl"] .fa-chevron-left:before {
+    content: "\f054";
+}
+
+html[dir="rtl"] .fa-arrow-right:before {
+    content: "\f060";
+}
+
+html[dir="rtl"] .fa-arrow-left:before {
+    content: "\f061";
+}
+
+/* Bootstrap RTL fixes */
+html[dir="rtl"] .ms-auto {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+html[dir="rtl"] .me-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+html[dir="rtl"] .text-start {
+    text-align: right !important;
+}
+
+html[dir="rtl"] .text-end {
+    text-align: left !important;
+}
+
+html[dir="rtl"] .float-end {
+    float: left !important;
+}
+
+html[dir="rtl"] .float-start {
+    float: right !important;
+}
+
+html[dir="rtl"] .ps-3,
+html[dir="rtl"] .ps-lg-4,
+html[dir="rtl"] .ps-xl-0,
+html[dir="rtl"] .ps-xxl-5 {
+    padding-right: inherit !important;
+    padding-left: 0 !important;
+}
+
+html[dir="rtl"] .pe-3,
+html[dir="rtl"] .pe-lg-4 {
+    padding-left: inherit !important;
+    padding-right: 0 !important;
+}
+
+/* Mobile menu */
+html[dir="rtl"] .mobile-menu-main {
+    right: -300px;
+    left: auto;
+}
+
+html[dir="rtl"] .mobile-menu-main.active {
+    right: 0;
+    left: auto;
+}
+
+/* Shapes */
+html[dir="rtl"] .line-shape {
+    transform: scaleX(-1);
+}
+
+/* Swiper/slider adjustments */
+html[dir="rtl"] .swiper {
+    direction: rtl;
+}
+
+/* Process/Work items */
+html[dir="rtl"] .process-label::after {
+    right: auto;
+    left: 0;
+}
+
+/* Contact info left alignment */
+html[dir="rtl"] .top-header .contact-info.left {
+    justify-content: flex-start;
+}
+
+/* Footer adjustments */
+html[dir="rtl"] .footer-widget {
+    text-align: right;
+}
+
+html[dir="rtl"] .important-link li {
+    flex-direction: row-reverse;
+}
+
+/* Button icons */
+html[dir="rtl"] .theme-btn-icon {
+    transform: scaleX(-1);
+}
+
+/* Accordion */
+html[dir="rtl"] .accordion-button::after {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+/* General gap fixes */
+html[dir="rtl"] .gap-2,
+html[dir="rtl"] .gap-3,
+html[dir="rtl"] .gap-4 {
+    flex-direction: row-reverse;
+}
