@@ -30,7 +30,7 @@ td,
 th,
 li,
 div:not([class*="fa"]) {
-  font-family: 'Cairo', sans-serif !important;
+  font-family: var(--font-tajawal), 'Tajawal', 'Cairo', sans-serif !important;
 }
 
 body {

@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Cairo } from "next/font/google";
+import { Tajawal } from "next/font/google";
 import "./rtl.css";
 
-const cairo = Cairo({
+const tajawal = Tajawal({
   subsets: ["arabic", "latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["200", "300", "400", "500", "700", "800", "900"],
   display: "swap",
-  variable: "--font-cairo",
+  variable: "--font-tajawal",
 });
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar" dir="rtl" className={cairo.variable}>
+    <html lang="ar" dir="rtl" className={tajawal.variable}>
       <head>
         {/* Favicon */}
         <link rel="shortcut icon" type="image/x-icon" href="/assets/img/fevicon.svg" />
