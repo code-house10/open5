@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Cairo } from "next/font/google";
 import "./rtl.css";
+
+const cairo = Cairo({
+  subsets: ["arabic", "latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  display: "swap",
+  variable: "--font-cairo",
+});
 
 export const metadata: Metadata = {
   title: "شركة نقل عفش القاهرة والجيزة | خدمات نقل الأثاث المتكاملة",
@@ -14,15 +22,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar" dir="rtl">
+    <html lang="ar" dir="rtl" className={cairo.variable}>
       <head>
         {/* Favicon */}
         <link rel="shortcut icon" type="image/x-icon" href="/assets/img/fevicon.svg" />
-
-        {/* Google Fonts - Cairo for Arabic */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
         {/* Theme CSS */}
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
